@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/image"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Touko Doline"
+        android:id="@+id/name"
+        android:layout_toRightOf="@+id/image"
+        android:textColor="#000"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="25dp"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/statut"
+        android:layout_toRightOf="@+id/name"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>
